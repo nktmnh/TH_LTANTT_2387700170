@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+crypto-toolkit/securecrypto/upload/
+crypto-toolkit/files/*.enc
+crypto-toolkit/files/*.dec
+crypto-toolkit/securecrypto.egg-info/
+mini-ca/certs/*.pem
