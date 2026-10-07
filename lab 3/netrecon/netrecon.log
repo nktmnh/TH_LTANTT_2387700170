@@ -9,3 +9,221 @@ INFO:werkzeug: * Debugger PIN: 144-318-312
 INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 13:19:25] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 13:19:25] "GET /static/style.css HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 13:19:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:[2026-10-07 15:03:12] Running service detection on 127.0.0.1:22,80,443
+INFO:root:[2026-10-07 15:03:24] Running service detection on 127.0.0.1:22,80,443
+INFO:root:[2026-10-07 15:03:24] Starting Nmap 7.92 ( https://nmap.org ) at 2026-10-07 15:03 SE Asia Standard Time
+Nmap scan report for 127.0.0.1
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.54 seconds
+
+INFO:root:[2026-10-07 15:03:30] Mapping network...
+INFO:root:[2026-10-07 15:03:31] 
+Interface: 192.168.218.1 --- 0x3
+  Internet Address      Physical Address      Type
+  192.168.218.254       00-50-56-e8-9b-89     dynamic   
+  192.168.218.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 26.143.206.151 --- 0x5
+  Internet Address      Physical Address      Type
+  26.0.0.1              02-00-00-00-51-00     dynamic   
+  26.255.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 169.254.220.185 --- 0x11
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 169.254.41.45 --- 0x13
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.70.252 --- 0x15
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.8.189           74-4c-a1-78-94-15     dynamic   
+  10.12.8.195           bc-09-1b-22-77-7f     dynamic   
+  10.12.10.19           5c-87-9c-fa-44-ca     dynamic   
+  10.12.20.12           2c-3b-70-94-15-97     dynamic   
+  10.12.20.125          cc-5e-f8-1d-bd-dd     dynamic   
+  10.12.21.116          00-41-0e-3e-8f-17     dynamic   
+  10.12.22.2            a0-29-42-e5-3d-05     dynamic   
+  10.12.22.44           04-56-e5-eb-ba-d6     dynamic   
+  10.12.22.128          dc-21-48-83-20-9d     dynamic   
+  10.12.24.120          e8-b0-c5-90-5f-7e     dynamic   
+  10.12.26.13           50-bb-b5-d1-75-64     dynamic   
+  10.12.27.159          e8-f4-08-6d-2c-cf     dynamic   
+  10.12.28.132          b8-1e-a4-e6-04-df     dynamic   
+  10.12.38.56           f4-7b-09-21-8c-bb     dynamic   
+  10.12.38.146          b8-1e-a4-ef-b0-9b     dynamic   
+  10.12.52.251          c0-35-32-81-9c-69     dynamic   
+  10.12.55.130          00-a5-54-30-ec-c4     dynamic   
+  10.12.56.133          f4-c8-8a-54-cf-63     dynamic   
+  10.12.57.205          2c-3b-70-93-63-59     dynamic   
+  10.12.58.191          2c-3b-70-9a-f2-23     dynamic   
+  10.12.59.0            f8-54-f6-1b-11-d9     dynamic   
+  10.12.59.60           a8-93-4a-5f-63-c7     dynamic   
+  10.12.59.85           50-bb-b5-c0-43-1c     dynamic   
+  10.12.59.97           e8-b0-c5-2e-a2-70     dynamic   
+  10.12.60.54           60-e3-2b-92-04-b9     dynamic   
+  10.12.60.218          14-d4-24-1b-e4-95     dynamic   
+  10.12.62.219          ce-b7-38-e6-88-08     dynamic   
+  10.12.63.135          44-38-e8-78-3d-cc     dynamic   
+  10.12.64.37           3c-58-c2-bf-59-a0     dynamic   
+  10.12.64.94           58-96-1d-75-d7-d5     dynamic   
+  10.12.64.157          cc-f9-e4-98-8d-98     dynamic   
+  10.12.66.76           cc-47-40-5f-63-de     dynamic   
+  10.12.69.165          2c-6d-c1-57-ea-18     dynamic   
+  10.12.70.180          c0-bf-be-43-6f-b5     dynamic   
+  10.12.70.198          54-6c-eb-37-5e-24     dynamic   
+  10.12.72.204          9c-67-d6-f1-a0-4f     dynamic   
+  10.12.73.41           28-95-29-9b-8c-f0     dynamic   
+  10.12.74.28           34-6f-24-a3-23-ff     dynamic   
+  10.12.95.140          90-09-df-e6-e2-54     dynamic   
+  10.12.96.179          70-08-10-51-61-43     dynamic   
+  10.12.101.28          00-45-e2-34-46-75     dynamic   
+  10.12.109.181         30-24-32-a7-66-a1     dynamic   
+  10.12.116.162         e0-0a-f6-77-f0-9b     dynamic   
+  10.12.118.85          00-d4-9e-36-66-0e     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  224.0.0.253           01-00-5e-00-00-fd     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.70.252:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-318-312
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 15:04:36] "GET / HTTP/1.1" 200 -
+INFO:root:[2026-10-07 15:04:37] Running service detection on 127.0.0.1:22,80,443
+INFO:root:[2026-10-07 15:04:38] Starting Nmap 7.92 ( https://nmap.org ) at 2026-10-07 15:04 SE Asia Standard Time
+Nmap scan report for 127.0.0.1
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.64 seconds
+
+INFO:root:[2026-10-07 15:04:44] Mapping network...
+INFO:root:[2026-10-07 15:04:44] 
+Interface: 192.168.218.1 --- 0x3
+  Internet Address      Physical Address      Type
+  192.168.218.254       00-50-56-e8-9b-89     dynamic   
+  192.168.218.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 26.143.206.151 --- 0x5
+  Internet Address      Physical Address      Type
+  26.0.0.1              02-00-00-00-51-00     dynamic   
+  26.255.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 169.254.220.185 --- 0x11
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 169.254.41.45 --- 0x13
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.70.252 --- 0x15
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.8.189           74-4c-a1-78-94-15     dynamic   
+  10.12.8.195           bc-09-1b-22-77-7f     dynamic   
+  10.12.10.19           5c-87-9c-fa-44-ca     dynamic   
+  10.12.20.12           2c-3b-70-94-15-97     dynamic   
+  10.12.20.125          cc-5e-f8-1d-bd-dd     dynamic   
+  10.12.21.116          00-41-0e-3e-8f-17     dynamic   
+  10.12.22.2            a0-29-42-e5-3d-05     dynamic   
+  10.12.22.44           04-56-e5-eb-ba-d6     dynamic   
+  10.12.22.128          dc-21-48-83-20-9d     dynamic   
+  10.12.24.120          e8-b0-c5-90-5f-7e     dynamic   
+  10.12.26.13           50-bb-b5-d1-75-64     dynamic   
+  10.12.27.159          e8-f4-08-6d-2c-cf     dynamic   
+  10.12.28.132          b8-1e-a4-e6-04-df     dynamic   
+  10.12.38.56           f4-7b-09-21-8c-bb     dynamic   
+  10.12.38.146          b8-1e-a4-ef-b0-9b     dynamic   
+  10.12.52.251          c0-35-32-81-9c-69     dynamic   
+  10.12.55.130          00-a5-54-30-ec-c4     dynamic   
+  10.12.56.133          f4-c8-8a-54-cf-63     dynamic   
+  10.12.57.205          2c-3b-70-93-63-59     dynamic   
+  10.12.58.191          2c-3b-70-9a-f2-23     dynamic   
+  10.12.58.251          da-d5-2e-48-2f-7f     dynamic   
+  10.12.59.0            f8-54-f6-1b-11-d9     dynamic   
+  10.12.59.60           a8-93-4a-5f-63-c7     dynamic   
+  10.12.59.85           50-bb-b5-c0-43-1c     dynamic   
+  10.12.59.97           e8-b0-c5-2e-a2-70     dynamic   
+  10.12.60.54           60-e3-2b-92-04-b9     dynamic   
+  10.12.60.218          14-d4-24-1b-e4-95     dynamic   
+  10.12.62.219          ce-b7-38-e6-88-08     dynamic   
+  10.12.63.135          44-38-e8-78-3d-cc     dynamic   
+  10.12.64.37           3c-58-c2-bf-59-a0     dynamic   
+  10.12.64.94           58-96-1d-75-d7-d5     dynamic   
+  10.12.64.157          cc-f9-e4-98-8d-98     dynamic   
+  10.12.66.76           cc-47-40-5f-63-de     dynamic   
+  10.12.69.165          2c-6d-c1-57-ea-18     dynamic   
+  10.12.70.180          c0-bf-be-43-6f-b5     dynamic   
+  10.12.70.198          54-6c-eb-37-5e-24     dynamic   
+  10.12.72.204          9c-67-d6-f1-a0-4f     dynamic   
+  10.12.73.41           28-95-29-9b-8c-f0     dynamic   
+  10.12.74.28           34-6f-24-a3-23-ff     dynamic   
+  10.12.95.140          90-09-df-e6-e2-54     dynamic   
+  10.12.96.179          70-08-10-51-61-43     dynamic   
+  10.12.101.28          00-45-e2-34-46-75     dynamic   
+  10.12.109.181         30-24-32-a7-66-a1     dynamic   
+  10.12.116.162         e0-0a-f6-77-f0-9b     dynamic   
+  10.12.118.85          00-d4-9e-36-66-0e     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  224.0.0.253           01-00-5e-00-00-fd     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 15:04:47] "POST /scan HTTP/1.1" 200 -

@@ -16,10 +16,15 @@ async def scan_port(target, port, semaphore):
             print(f"[+] {port}/tcp open")
             writer.close()
             await writer.wait_closed()
+            return port
     except:
-        pass
+        return None
 
 async def async_scan_ports(target, ports, rate_limit=100):
     semaphore = asyncio.Semaphore(rate_limit)
     tasks = [scan_port(target, port, semaphore) for port in ports]
-    await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks)
+    open_ports = [p for p in results if p is not None]
+    if open_ports:
+        return f"Open ports on {target}: {', '.join(map(str, open_ports))}"
+    return f"Scan completed on {target}. No open ports found among {ports}."
