@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {"id": "SAST000", "severity": "error", "description": "Python syntax error prevents analysis.", "enabled": true},
+    {"id": "SAST001", "severity": "high", "description": "Use of eval() is dangerous and should be avoided.", "enabled": true},
+    {"id": "SAST002", "severity": "high", "description": "Use of exec() can execute untrusted code.", "enabled": true},
+    {"id": "SAST003", "severity": "high", "description": "Possible hardcoded credential.", "enabled": true},
+    {"id": "SAST004", "severity": "high", "description": "Pickle deserialization can execute code.", "enabled": true},
+    {"id": "SAST006", "severity": "medium", "description": "subprocess with shell=True is risky.", "enabled": true},
+    {"id": "SAST007", "severity": "low", "description": "Function length exceeds the configured threshold.", "enabled": true},
+    {"id": "SAST008", "severity": "medium", "description": "Function complexity exceeds the configured threshold.", "enabled": true},
+    {"id": "SAST009", "severity": "low", "description": "flake8 lint issue.", "enabled": true}
+  ]
+}
