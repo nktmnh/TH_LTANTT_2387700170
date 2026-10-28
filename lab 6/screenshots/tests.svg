@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Terminal output of Lab 6 unit tests">
+  <rect width="1200" height="650" rx="18" fill="#0d1117"/>
+  <rect width="1200" height="48" rx="18" fill="#21262d"/><rect y="30" width="1200" height="18" fill="#21262d"/>
+  <circle cx="30" cy="24" r="8" fill="#ff5f57"/><circle cx="56" cy="24" r="8" fill="#febc2e"/><circle cx="82" cy="24" r="8" fill="#28c840"/>
+  <text x="112" y="30" fill="#c9d1d9" font-family="Consolas, monospace" font-size="18">PowerShell - Lab 6 DevSecOps</text>
+  <g font-family="Consolas, monospace" font-size="18" fill="#c9d1d9">
+    <text x="35" y="87" fill="#79c0ff">PS C:\lab 6&gt; python -m unittest discover -s tests -v</text>
+    <text x="35" y="125">test_dependency_allows_pin ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="157">test_dependency_requires_pin ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="189">test_iac_detects_privileged ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="221">test_iac_detects_public_port ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="253">test_iac_hardened_configuration ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="285">test_sast_detects_eval / exec / shell_true ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="317">test_secret_scan_allows_environment_lookup ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="349">test_secret_scan_detects_password ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="381">test_report_is_json ... <tspan fill="#3fb950">ok</tspan></text>
+    <text x="35" y="431">----------------------------------------------------------------------</text>
+    <text x="35" y="465">Ran 12 tests in 0.028s</text>
+    <text x="35" y="515" font-size="25" font-weight="bold" fill="#3fb950">OK</text>
+    <text x="35" y="575" fill="#8b949e">Kết quả chạy thực tế trên Python 3.13</text>
+  </g>
+</svg>

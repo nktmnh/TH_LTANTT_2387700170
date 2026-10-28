@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="DevSecOps CI pipeline stages">
+ <rect width="1200" height="360" rx="18" fill="#f6f8fa"/>
+ <text x="50" y="65" fill="#24292f" font-family="Arial, sans-serif" font-weight="bold" font-size="29">Lab 6 - DevSecOps CI/CD pipeline</text>
+ <g font-family="Arial, sans-serif" font-weight="bold" font-size="19" text-anchor="middle">
+  <g fill="#dbeafe" stroke="#2563eb" stroke-width="2"><rect x="50" y="145" width="145" height="90" rx="12"/><rect x="240" y="145" width="145" height="90" rx="12"/><rect x="430" y="145" width="145" height="90" rx="12"/><rect x="620" y="145" width="145" height="90" rx="12"/><rect x="810" y="145" width="145" height="90" rx="12"/></g>
+  <rect x="1000" y="145" width="145" height="90" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <g fill="#1d4ed8"><text x="122" y="180">TEST</text><text x="312" y="180">SAST</text><text x="502" y="180">SECRETS</text><text x="692" y="180">SCA</text><text x="882" y="180">IaC</text></g><text x="1072" y="180" fill="#15803d">BUILD</text>
+  <g font-size="14" font-weight="normal" fill="#475569"><text x="122" y="209">12 unit tests</text><text x="312" y="209">AST policy</text><text x="502" y="209">No hard-code</text><text x="692" y="209">Pinned deps</text><text x="882" y="209">Hardened YAML</text><text x="1072" y="209">Docker image</text></g>
+ </g>
+ <g stroke="#64748b" stroke-width="3" fill="none"><path d="M195 190H230m-12-8 12 8-12 8M385 190H420m-12-8 12 8-12 8M575 190H610m-12-8 12 8-12 8M765 190H800m-12-8 12 8-12 8M955 190H990m-12-8 12 8-12 8"/></g>
+ <text x="50" y="300" fill="#475569" font-family="Arial, sans-serif" font-size="17">Bất kỳ finding mức High/Critical nào sẽ chặn stage Build. Báo cáo JSON được lưu làm artifact CI.</text>
+</svg>

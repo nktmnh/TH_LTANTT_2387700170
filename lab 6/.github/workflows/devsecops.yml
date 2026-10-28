@@ -1,0 +1,37 @@
+name: DevSecOps security gates
+
+on:
+  push:
+    paths:
+      - 'lab 6/**'
+  pull_request:
+    paths:
+      - 'lab 6/**'
+
+permissions:
+  contents: read
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lab 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: SAST secret SCA and IaC gates
+        run: python run_security_checks.py --root . --report reports/security-report.json
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: security-report
+          path: lab 6/reports/security-report.json
+          retention-days: 7
+      - name: Build hardened container
+        run: docker build --pull --tag lab6-devsecops:${{ github.sha }} .
